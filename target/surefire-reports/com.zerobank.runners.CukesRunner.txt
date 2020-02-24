@@ -1,0 +1,15 @@
+-------------------------------------------------------------------------------
+Test set: com.zerobank.runners.CukesRunner
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 1.625 s <<< FAILURE! - in com.zerobank.runners.CukesRunner
+initializationError(com.zerobank.runners.CukesRunner)  Time elapsed: 0.032 s  <<< ERROR!
+cucumber.runtime.CucumberException: Failed to parse resource at: file:src/test/resources/features/accountActivity.feature
+Caused by: gherkin.ParserException$CompositeParserException: 
+Parser errors:
+(18:3): expected: #TagLine, #ScenarioLine, #ScenarioOutlineLine, #Comment, #Empty, got 'Given The user is logged with valid credentials'
+(19:3): expected: #TagLine, #ScenarioLine, #ScenarioOutlineLine, #Comment, #Empty, got 'When The user should be able to  login'
+(20:3): expected: #TagLine, #ScenarioLine, #ScenarioOutlineLine, #Comment, #Empty, got 'Then The user should be able to click accountActivity'
+(21:3): expected: #TagLine, #ScenarioLine, #ScenarioOutlineLine, #Comment, #Empty, got 'And Account drop down should have the following options:'
+(24:7): expected: #TagLine, #ScenarioLine, #ScenarioOutlineLine, #Comment, #Empty, got '|Savings|Checking|Loan|Credit Card|Brokerage|'
+(26:0): unexpected end of file, expected: #TagLine, #ScenarioLine, #ScenarioOutlineLine, #Comment, #Empty
+
